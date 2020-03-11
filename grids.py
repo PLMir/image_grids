@@ -5,7 +5,7 @@ from PIL import Image
 def prepare_random_order(n, len):
     """Creates a randomly ordered list of 0 and 1. 0 appears n times and list has size len."""
     if int(n) != n:
-        raise Exception("n should be the number (integer) of times the first image appears in the grid. Please fix this.")
+        raise Exception("The proportion should be entered as the number (integer) of times you wish the first image to appear in the grid. Please fix this.")
     ordering = [0] * n + [1] * (len - n)
     random.shuffle(ordering)
     return(ordering)
